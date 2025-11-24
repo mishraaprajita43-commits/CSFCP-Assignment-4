@@ -1,3 +1,4 @@
+print("Welcome to the calculator!") 
 def add(a, b):
     return a + b
 
@@ -21,8 +22,13 @@ print("4. Division")
 
 choice = input("Enter your choice (1/2/3/4): ")
 
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+try:
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+except ValueError:
+    print("Invalid input. Please enter a number.")
+    exit()
+
 
 if choice == '1':
     print("Result:", add(num1, num2))
