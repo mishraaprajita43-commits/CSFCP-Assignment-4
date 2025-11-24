@@ -1,5 +1,12 @@
 print("Welcome to the calculator!") 
 print("You can perform +, -, *, / operations")
+try:
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+except ValueError:
+    print("Invalid input! Please enter numeric values only.")
+    exit()
+
 
 def add(a, b):
     return a + b
