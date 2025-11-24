@@ -1,4 +1,6 @@
 print("Welcome to the calculator!") 
+print("You can perform +, -, *, / operations")
+
 def add(a, b):
     return a + b
 
