@@ -4,4 +4,4 @@ Fir terminal me run karo:
 
 ```bash
 git add .
-git commit -m "5. Added README and documentation files"
+git commit -m "This code is of a calculator"
